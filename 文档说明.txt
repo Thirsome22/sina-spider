@@ -1,0 +1,13 @@
+本系统使用Python基于Scrapy框架，对新浪微博手机客户端进行关键词内容爬取。
+
+先调用了新浪微博的api接口，获得相应的json内容，从中获取关键词的内容信息。
+
+user_agent.py 文件中加了各类的Headers，反爬虫策略
+item.py 文件中定义了所要爬取的数据段内容
+pipelines.py 里定义了将内容存储到数据库和表格中
+setting.py 文件中设置了爬虫中的一些规则
+cookies.py 文件中定义了电脑获取Cookie值并调用浏览器进行模拟登陆
+
+爬取内容的代码编写在spiders文件下的weibo_keyword.py文件中，并进行内容的抓取
+
+最后将系统的启动程序下载 lauch.py 中，执行此文件即可开始运行。

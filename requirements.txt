@@ -1,0 +1,7 @@
+scrapy>=1.4.0
+scrapy_redis
+pymongo
+selenium
+redis
+pytz
+requests
